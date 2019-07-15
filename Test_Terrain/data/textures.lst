@@ -1,0 +1,13 @@
+samples\test_terrain\data\utes_tiled_mask_lca.png
+samples\test_terrain\data\utes_tiled_normal_nohq.png
+samples\test_terrain\data\utes_tiled_sat_lco.png
+samples\test_terrain\data\utes_global_nohq.tga
+samples\test_terrain\data\utes_middlesat_mco.tga
+samples\test_terrain\data\utes_outsidesat_co.tga
+samples\test_terrain\data\utes_deepmap_co.edds
+samples\test_terrain\data\utes_sea_nice.emat
+samples\test_terrain\data\utes_sea.emat
+samples\test_terrain\data\utes_sea_storm.emat
+samples\test_terrain\data\surfaces\data\utes_concrete.rvmat
+samples\test_terrain\data\surfaces\data\utes_concrete_ca.tga
+samples\test_terrain\data\surfaces\data\utes_concrete_nopx.tga

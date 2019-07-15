@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playerspawnpoints>
+    <fresh>
+		<spawn_params>
+            <min_dist_infected>30.0</min_dist_infected>
+            <max_dist_infected>70.0</max_dist_infected>
+            <min_dist_player>25.0</min_dist_player>
+            <max_dist_player>70.0</max_dist_player>
+            <min_dist_static>0.5</min_dist_static>
+            <max_dist_static>2.0</max_dist_static>
+		</spawn_params>
+
+		<generator_params>
+            <grid_density>8</grid_density>
+            <grid_width>40.0</grid_width>
+            <grid_height>40.0</grid_height>
+            <min_dist_static>0.5</min_dist_static>
+            <max_dist_static>2.0</max_dist_static>
+            <min_steepness>-45</min_steepness>
+            <max_steepness>45</max_steepness>
+		</generator_params>
+
+		<generator_posbubbles>
+			<pos x="3311.376953" z="3215.801758" />
+			<pos x="3742.682861" z="4392.00293" />
+			<pos x="2824.503662" z="4180.757324" />
+			<pos x="3995.826904" z="4247.23291" />
+			<pos x="4234.431641" z="3842.544922" />
+			<pos x="2895.733154" z="3525.607178" />
+			<pos x="3086.631348" z="4625.232422" />
+			<pos x="3181.713135" z="3499.300293" />
+			<pos x="2441.157471" z="3931.449951" />
+			<pos x="4526.463867" z="3142.7229" />
+			<pos x="3770.107178" z="2903.326172" />
+			<pos x="4129.921875" z="2697.759277" />
+			<pos x="4390.994629" z="2953.050049" />
+		</generator_posbubbles>
+    </fresh>
+</playerspawnpoints>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+

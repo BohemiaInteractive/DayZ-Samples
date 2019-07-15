@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<events>
+    <event name="Loot">
+        <waves>0</waves>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
+        <lifetime>0</lifetime>
+        <restock>0</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>50</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0" sec_spawner="0"/>
+        <position>fixed</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children/>
+    </event>
+</events>
