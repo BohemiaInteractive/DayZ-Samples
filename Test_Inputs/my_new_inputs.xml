@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+
+	<!-- declarations -->
+	<inputs>
+
+		<actions>
+			<input name="UAPerformNewAction" loc="Perform action" />
+		</actions>
+
+	</inputs>
+
+	<!-- preset -->
+	<preset>
+		
+		<input name="UAPerformNewAction">
+			<btn name="kM" />
+		</input>
+		
+	</preset>
+
+</modded_inputs>
