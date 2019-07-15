@@ -1,0 +1,37 @@
+mainLight="Sun";
+fogMode="Fog";
+ambient[]={1,1,0.5,2};
+diffuse[]={0.6,0.5,0.45,1};
+forcedDiffuse[]={0.1,0.1,0,0};
+emmisive[]={0,0,0,1};
+specular[]={0,0,0,1};
+specularPower=1;
+shadowBias=0.55;
+plantWind[]={0.05, 0.13, 0.94, 50.50};
+renderFlags[]={"AlphaTest32"};
+PixelShaderID="Grass";
+VertexShaderID="Grass";
+class Stage2
+{
+	texture="samples\test_clutter\data\c_samplegrass_nohq.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage3
+{
+	texture="samples\test_clutter\data\c_samplegrass_mask_co.tga";
+	uvSource="tex1";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
