@@ -80,6 +80,9 @@ class CfgWorlds
 		noDetailDist = 65.0;
 		fullDetailDist = 10.0;
 
+		// base height for volFog (see CAWorld Weather class)
+		volFogOffset = 0;
+		
 		// link of materials for detailed terrain surfaces (for specular to work)
 		class UsedTerrainMaterials
 		{
@@ -182,6 +185,14 @@ class CfgWorlds
 				stepY = 10000.0;
 			};
 		};
+		
+		// 2D map item params
+		mapDisplayNameKey = "#STR_CfgVehicles_ChernarusMap0";
+		mapDescriptionKey = "#STR_CfgVehicles_ChernarusMap1";
+		mapTextureClosed = "dz\gear\navigation\data\map_chernarus_co.paa";
+		mapTextureOpened = "dz\structures\signs\tourist\data\karta_co.paa";
+		mapTextureLegend = "dz\structures\signs\tourist\data\karta_side_co.paa";
+		userMapPath = "dz\gear\navigation\data\usermap";
 		
 		minTreesInForestSquare = 10;	// for 2d map (also affects forest controller)
 		minRocksInRockSquare = 5;		// for 2d map
