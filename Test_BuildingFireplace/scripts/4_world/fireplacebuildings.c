@@ -1,0 +1,3 @@
+class land_sample_building_fireplace extends BuildingWithFireplace
+{
+}
