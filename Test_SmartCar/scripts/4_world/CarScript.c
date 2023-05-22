@@ -37,7 +37,7 @@ modded class CarScript
 			}
 			else if (!EngineIsOn())
 			{
-                //! Start the engine
+				//! Start the engine
 				EngineStart();
 			}
 			
@@ -60,12 +60,12 @@ modded class CarScript
 
 	void Throttle(float dt)
 	{
-        //! Use the pitch to increase the throttle if the car is going up a hill
+		//! Use the pitch to increase the throttle if the car is going up a hill
 		float hillFactor = GetOrientation()[1] / 10.0;
 		hillFactor += 1.0;
 		hillFactor = Math.Clamp(hillFactor, 0.5, 5.0);
 		
-        //! Prevent the throttle from redlining the engine
+		//! Prevent the throttle from redlining the engine
 		m_ThrottleWanted = (EngineGetRPMMin() - EngineGetRPM()) / (EngineGetRPMMin() - EngineGetRPMRedline());
 		m_ThrottleWanted = 1.0 - m_ThrottleWanted;
 		m_ThrottleWanted *= Math.AbsFloat(m_Input_ForwardReverse);
@@ -172,33 +172,33 @@ modded class CarScript
 	{
 		if (m_GearWanted != m_GearCurrent)
 		{
-            int gear = 0;
+			int gear = 0;
 
-            //! Automatic gearbox switching 
-            if (m_GearWanted > m_GearCurrent)
-            {
-                for (gear = m_GearCurrent; gear < m_GearWanted; gear++)
-                {
-                    ShiftUp();
-                }
-            }
+			//! Automatic gearbox switching 
+			if (m_GearWanted > m_GearCurrent)
+			{
+				for (gear = m_GearCurrent; gear < m_GearWanted; gear++)
+				{
+					ShiftUp();
+				}
+			}
 
-            if (m_GearWanted < m_GearCurrent)
-            {
-                for (gear = m_GearCurrent; gear >= m_GearWanted; gear--)
-                {
-                    ShiftDown();
-                }
-            }
+			if (m_GearWanted < m_GearCurrent)
+			{
+				for (gear = m_GearCurrent; gear >= m_GearWanted; gear--)
+				{
+					ShiftDown();
+				}
+			}
 
-            //! Manual gearbox switching override
-            ShiftTo(m_GearWanted);
+			//! Manual gearbox switching override
+			ShiftTo(m_GearWanted);
 
-            //! Event setter for when the clutch is meant to be disengaged, for purposes of this sample, we can assume it is always fired
+			//! Event setter for when the clutch is meant to be disengaged, for purposes of this sample, we can assume it is always fired
 			SetClutchState(false);
 		}
 
-        //! Disable handbrake and brakes from engaging automatically, overriding SetBrake/SetHandbrake
+		//! Disable handbrake and brakes from engaging automatically, overriding SetBrake/SetHandbrake
 		SetBrakesActivateWithoutDriver(false);
 		
 		SetBrake(m_BrakeWanted, 0, false);
